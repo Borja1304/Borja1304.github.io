@@ -1,12 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Básica</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>hola</h1>
+  <header>
+    <h1 id="welcome-message">¡Bienvenido a mi página!</h1>
+  </header>
+  <main>
+    <button onclick="changeColor()">Cambiar color del texto</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html> <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benjamin Borja - Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="inicio">
+    <h1>Benjamin Borja</h1>
+    <p>Desarrollador web con experiencia en...</p>
+    <button>Ver más</button>
+  </section>
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <img src="foto-perfil.jpg" alt="Foto de perfil">
+  </section>
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <ul>
+      <li>
+        <h3>Proyecto 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Ver más</a>
+      </li>
+      <li>
+        <h3>Proyecto 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Ver más</a>
+      </li>
+    </ul>
+  </section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <form>
+      <input type="text" placeholder="Nombre">
+      <input type="email" placeholder="Correo electrónico">
+      <textarea placeholder="Mensaje"></textarea>
+      <button>Enviar</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2023 Benjamin Borja</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
